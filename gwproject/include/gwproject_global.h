@@ -1,0 +1,12 @@
+#ifndef GWPROJECT_GLOBAL_H
+#define GWPROJECT_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(GWPROJECT_LIBRARY)
+#  define GWPROJECTSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define GWPROJECTSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // GWPROJECT_GLOBAL_H

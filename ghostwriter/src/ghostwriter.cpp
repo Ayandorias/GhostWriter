@@ -14,7 +14,7 @@
 
 //// begin GhostWriter specific includes
 #include <ghostwriter.h>
-#include <newprojectwizard.h>
+#include <newwizard.h>
 #include <logging.h>
 #include "ui_ghostwriter.h"
 //// end GhostWriter specific includes

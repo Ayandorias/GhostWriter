@@ -1,15 +1,15 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-01-28T11:15:56
+# Project created by QtCreator 2018-01-28T11:46:24
 #
 #-------------------------------------------------
 
-QT       += gui
+QT       -= gui
 
-TARGET = gwproject
+TARGET = gwproperties
 TEMPLATE = lib
 
-DEFINES += GWPROJECT_LIBRARY
+DEFINES += GWPROPERTIES_LIBRARY
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -22,20 +22,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+
 INCLUDEPATH += \
     include
 
 SOURCES += \
-        src/gwproject.cpp \
-    src/newwizard.cpp
+        src/gwproperties.cpp
 
 HEADERS += \
-    include/gwproject.h \
-    include/gwproject_global.h \
-    include/newwizard.h
-
-FORMS += \
-    forms/newwizard.ui
+        include/gwproperties.h \
+        include/gwproperties_global.h
 
 unix {
     target.path = /usr/lib

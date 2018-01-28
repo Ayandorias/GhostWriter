@@ -2,5 +2,6 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     ghost-sdk \
-    ghostwriter \
-    gwproject
+    gwproject \
+    gwproperties \
+    ghostwriter
