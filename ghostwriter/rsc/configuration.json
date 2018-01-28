@@ -1,0 +1,25 @@
+{
+    "root": "Nebenwelten-GhostWriter",
+    "tree": [
+        {
+            "category": "folder",
+            "name": "PersonTest",
+            "children":
+            [
+                {"category":"file", "name":"Paul_Dianno","filename":"test.json"},
+                {
+                    "category":"folder",
+                    "name":"Family Tron",
+                    "children":
+                    [
+                        {"category":"file", "name":"Miles Tron","filename":"test.json"},{"category":"file", "name":"John Tron","filename":"test.json"}
+                    ]
+                }
+            ]
+        },{
+            "category": "folder",
+            "name": "Places",
+            "children":[]
+        }
+    ]
+}

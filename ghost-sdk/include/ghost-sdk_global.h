@@ -1,0 +1,12 @@
+#ifndef GHOSTSDK_GLOBAL_H
+#define GHOSTSDK_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(GHOSTSDK_LIBRARY)
+#  define GHOSTSDKSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define GHOSTSDKSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // GHOSTSDK_GLOBAL_H
