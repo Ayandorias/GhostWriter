@@ -14,9 +14,9 @@
 
 //// begin GhostWriter specific includes
 #include <ghostwriter.h>
-#include <newwizard.h>
 #include <logging.h>
 #include "ui_ghostwriter.h"
+#include <newwizard.h>
 //// end GhostWriter specific includes
 
 //// begin using namespaces
@@ -105,7 +105,7 @@ GW::GhostWriter::~GhostWriter() {
 void GW::GhostWriter::createNewProject(bool trigger) {
     Q_UNUSED(trigger)
 
-    NewProjectWizard wizard(this);
+    GWProject::NewWizard wizard(this);
     wizard.show();
     wizard.exec();
 }

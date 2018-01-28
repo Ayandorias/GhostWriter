@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>NewProjectWizard</class>
- <widget class="QWizard" name="NewProjectWizard">
+ <class>NewWizardForm</class>
+ <widget class="QWizard" name="NewWizardForm">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,9 +13,17 @@
   <property name="windowTitle">
    <string>Wizard</string>
   </property>
-  <widget class="QWizardPage" name="wizardPage1"/>
+  <widget class="GWProject::SelectTemplate" name="wizardPage1"/>
   <widget class="QWizardPage" name="wizardPage2"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GWProject::SelectTemplate</class>
+   <extends>QWizardPage</extends>
+   <header>selecttemplate.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -27,19 +27,14 @@ INCLUDEPATH += \
 
 SOURCES += \
     src/ghostsdk.cpp \
-    src/logging.cpp \
-    src/newprojectwizard.cpp
+    src/logging.cpp
 
 HEADERS += \
     include/ghostsdk.h \
     include/ghost-sdk_global.h \
-    include/logging.h \
-    include/newprojectwizard.h
+    include/logging.h
 
 unix {
     target.path = /usr/lib
     INSTALLS += target
 }
-
-FORMS += \
-    forms/newprojectwizard.ui

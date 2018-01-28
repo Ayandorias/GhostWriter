@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += gui
+QT       += widgets network svg
 
 TARGET = gwproject
 TEMPLATE = lib
@@ -27,17 +27,30 @@ INCLUDEPATH += \
 
 SOURCES += \
         src/gwproject.cpp \
-    src/newwizard.cpp
+    src/newwizard.cpp \
+    src/selecttemplate.cpp \
+    src/projecttemplatesoverview.cpp \
+    src/itemtemplatesoverview.cpp \
+    src/wizardtemplate.cpp
 
 HEADERS += \
     include/gwproject.h \
     include/gwproject_global.h \
-    include/newwizard.h
+    include/newwizard.h \
+    include/selecttemplate.h \
+    include/projecttemplatesoverview.h \
+    include/itemtemplatesoverview.h \
+    include/wizardtemplate.h
 
 FORMS += \
-    forms/newwizard.ui
+    forms/newwizard.ui \
+    forms/selecttemplate.ui \
+    forms/wizardtemplate.ui
 
 unix {
     target.path = /usr/lib
     INSTALLS += target
 }
+
+RESOURCES += \
+    resource/gwproject.qrc

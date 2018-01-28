@@ -1,0 +1,6 @@
+{
+    "templates": [
+        { "name" : "Novel" },
+		{ "name" : "Comic" }
+    ]
+}
